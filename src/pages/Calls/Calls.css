@@ -1,0 +1,68 @@
+.stacked-cards-page {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card-container {
+    width: 40%;
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.custom-card {
+    margin-bottom: 16px;
+    transform-origin: center bottom;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.custom-card:hover {
+    transform: scale(1.1);
+}
+
+.glass-background {
+    width: 60%;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust alpha value for transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selectedCardScreen{
+    width: 60%;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.animated-card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.animated-background {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.slide-in-button-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.slide-in-button {
+    margin-top: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.custom-card:hover .slide-in-button {
+    opacity: 1;
+}

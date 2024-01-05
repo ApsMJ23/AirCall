@@ -1,0 +1,11 @@
+.renderCallCard{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    width: 20rem;
+    padding: 1rem ;
+    transition: transform 0.2s ease-in-out;
+}
+.renderCallCard:hover{
+    transform: scale(1.1);
+}
