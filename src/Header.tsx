@@ -1,11 +1,12 @@
 import React, {ChangeEvent} from 'react';
 import {AppBar, Container, Tab, Tabs, Toolbar} from "@mui/material";
-import {useNavigate} from "react-router";
+import {useLocation, useNavigate} from "react-router";
 import logo from './assets/aircallLogo.svg'
 
 const Header = () => {
     const router = useNavigate();
-    const [value, setValue] = React.useState('calls');
+    const location = useLocation()
+    const [value, setValue] = React.useState(location.pathname.split('/')[1]);
     const handleChange = (event:ChangeEvent<{}>,newValue:string) => {
         setValue(newValue);
         router('/'+newValue);

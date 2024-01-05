@@ -9,7 +9,7 @@ type Props = {
 const RenderCallProperty = ({ property,value}:Props)=>{
     return(
         <Stack direction="row" gap={2}>
-            <Card elevation={5} variant={'outlined'} className='renderCallCard'>
+            <Card elevation={5}  className='renderCallCard'>
             <Typography fontWeight="bold" fontSize="large">
                 {property}:
             </Typography>

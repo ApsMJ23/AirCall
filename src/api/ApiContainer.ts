@@ -20,8 +20,7 @@ export const getArchievedCalls = async () => {
         method: GET,
         url: `${BASEURL}/activities`,
     })
-    const result: Call[] = [res.data]
-    debugger
+    const result: Call[] = res.data
     const archievedCall = result.filter((call) => call.is_archived)
     return sortCallByDate(archievedCall)
 }
