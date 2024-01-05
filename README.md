@@ -1,6 +1,6 @@
 # AirCall
 
-## Deployed Link :- https://aircallspeer.netlify.app/calls
+## Deployed Link :- https://aircallspeer.netlify.app
 
 This is a simple application that allows you to manage your calls and have an in-depth insight about how you've taken your calls.
 In this project we used the following technologies:
